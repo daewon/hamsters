@@ -124,4 +124,5 @@ class HListSpec extends FlatSpec with Matchers {
     list shouldBe List("hi", "hello")
 
   }
+
 }
