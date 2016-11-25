@@ -197,7 +197,7 @@ Enumeration.name(Winter: Season) // "winter"
 Enumeration.parse("winter") // Some(Winter)
 ```
 
-It is also possible to use some custom namings :
+It is also possible to use custom namings :
 
 ```scala
 
