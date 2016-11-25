@@ -178,7 +178,7 @@ jsonElement(1).getOrElse("not found") // get String value or "not found" if get[
 ```
 
 
-### Enums (SNAPSHOT version)
+### Enums (master branch only right now)
 
 This typeclass allows to use parse and name methods on enumerable types. It can be very useful if you need to serialize and deserialize your types (in Json, in a database...)
 
@@ -197,7 +197,7 @@ Enumeration.name(Winter: Season) // "winter"
 Enumeration.parse("winter") // Some(Winter)
 ```
 
-It is also possible to use some custom namings :
+It is also possible to use custom namings :
 
 ```scala
 
