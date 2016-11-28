@@ -193,7 +193,7 @@ implicit val seasonEnumerable = new Enumerable[Season] {
   override def list: List[Season] = List(Winter, Spring, Summer, Fall)
 }
 
-Enumeration.name(Winter: Season) // "winter"
+Enumeration.name(Winter) // "winter"
 Enumeration.parse("winter") // Some(Winter)
 ```
 
@@ -204,7 +204,7 @@ It is also possible to use custom namings :
 implicit val seasonEnumerable = new Enumerable[Season] {
   override def list = List(Winter, Spring, Summer, Fall)
 
-  override def name(s: Season) = {
+  override def name(s) = {
     s match {
       case Winter => "WINTER_SEASON"
       case other => super.name(other)

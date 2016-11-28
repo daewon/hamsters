@@ -15,7 +15,7 @@ class EnumSpec extends FlatSpec with Matchers {
       override def list: List[Season] = List(Winter, Spring, Summer, Fall)
     }
 
-    Enumeration.name(Winter: Season) shouldBe "winter"
+    Enumeration.name(Winter) shouldBe "winter"
     Enumeration.parse("winter") shouldBe Some(Winter)
 
   }
@@ -39,7 +39,7 @@ class EnumSpec extends FlatSpec with Matchers {
       }
     }
 
-    Enumeration.name(Winter: Season) shouldBe "WINTER_SEASON"
+    Enumeration.name(Winter) shouldBe "WINTER_SEASON"
     Enumeration.parse("WINTER_SEASON") shouldBe Some(Winter)
 
   }

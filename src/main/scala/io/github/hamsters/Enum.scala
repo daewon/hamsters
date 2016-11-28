@@ -10,9 +10,10 @@ trait Enumerable[A] {
 }
 
 object Enumeration {
-  def name[A, T >: A](a: A)(implicit ev: Enumerable[T]) = ev.name(a)
 
-  def parse[A, T >: A](s: String)(implicit ev: Enumerable[T]) = ev.parse(s)
+  def name[A](a: A)(implicit ev: Enumerable[_ >: A]) = ev.name(a)
+
+  def parse[A](s: String)(implicit ev: Enumerable[_ >: A]) = ev.parse(s)
 
   def list[T](implicit ev: Enumerable[T]) = ev.list
 }
