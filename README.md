@@ -20,7 +20,7 @@ With SBT :
 
 ```scala
 libraryDependencies ++= Seq(
-  "io.github.scala-hamsters" %% "hamsters" % "1.0.7"
+  "io.github.scala-hamsters" %% "hamsters" % "1.1.0"
 )
 ```
 
@@ -178,7 +178,7 @@ jsonElement(1).getOrElse("not found") // get String value or "not found" if get[
 ```
 
 
-### Enums (master branch only right now)
+### Enums
 
 This typeclass allows to use parse and name methods on enumerable types. It can be very useful if you need to serialize and deserialize your types (in Json, in a database...)
 
