@@ -8,6 +8,7 @@ Currently, Hamsters supports :
 
  * Validation
  * OK/KO Monads
+ * Enum typeclass
  * Monad transformers
  * HLists
  * Union types
